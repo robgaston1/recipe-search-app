@@ -4,7 +4,7 @@
     <md-card id="ingredient-input">
       <md-card-header>
         <div class="md-title">Add an ingredient</div>
-        <div class="md-subhead">Items that the market stocks</div>
+        <div class="md-subhead">{{ purpose }}</div>
       </md-card-header>
       <md-card-content>
         <input v-model="ingredientInput" v-on:keyup.enter="submitIngredient()"/>
@@ -33,7 +33,8 @@ export default {
   data () {
     return {
       ingredientInput: '',
-      ingredientAdded: ''
+      ingredientAdded: '',
+      purpose: 'This page is to easily add ingredients to our database'
     }
   },
   firebase: {

@@ -1,12 +1,18 @@
 <template>
   <div>
     <h3>Recipe API Search</h3>
+    <p>
+      {{ purpose }}
+    </p>
+    <div id="input-area">
       <input v-model="searchTerm" v-on:keyup.enter="searchAPI()" />
       <md-button
         v-on:click="searchAPI()"
         class="md-icon-button md-raised">
         <md-icon>search</md-icon>
       </md-button>
+    </div>
+
       <div>
         <ul>
           <li v-for="item in recipeArray">
@@ -29,7 +35,8 @@ export default {
   data () {
     return{
       searchTerm: '',
-      recipeArray: []
+      recipeArray: [],
+      purpose: "This page integrates with a recipe API search. It returns a list of ten recipes and the titles are hyperlinks to the original recipe"
     }
   },
   methods: {
@@ -52,4 +59,7 @@ export default {
 
 <style scoped>
 
+#input-area {
+  line-height: 40px
+}
 </style>
