@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div>
     <h1>Recipe Search App</h1>
     <md-card id="ingredient-input">
       <md-card-header>

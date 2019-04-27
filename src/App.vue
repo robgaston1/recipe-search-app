@@ -11,6 +11,9 @@
       <li>
         <router-link to="/search">Search</router-link>
       </li>
+      <li>
+        <router-link to="/supplies">Supplies</router-link>
+      </li>
     </div>
     </ul>
     <router-view></router-view>

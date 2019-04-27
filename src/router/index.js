@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import Ingredients from '@/components/Ingredients'
 import Search from '@/components/Search'
+import Supplies from '@/components/Supplies'
 
 Vue.use(Router)
 
@@ -23,6 +24,11 @@ export default new Router({
       path: '/search',
       name: 'Search',
       component: Search
+    },
+    {
+      path: '/supplies',
+      name: 'Supplies',
+      component: Supplies
     }
   ],
 })
