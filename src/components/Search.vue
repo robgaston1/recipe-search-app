@@ -44,7 +44,6 @@ export default {
       let _this = this
       axios.get('https://api.edamam.com/search?q=' + this.searchTerm + '&app_id=bffdb5a7&app_key=3d5807ccb215b767866b83ca00a92013')
       .then((resp) => {
-        console.log(resp.data.hits)
         _this.recipeArray = resp.data.hits
         _this.searchTerm = ''
       })
